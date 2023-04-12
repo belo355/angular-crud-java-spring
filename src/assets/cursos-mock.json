@@ -1,4 +1,4 @@
 [
-  { "_id": "1", "nome": "Angular", "categoria": "frontend" },
-  { "_id": "2", "nome": "Java", "categoria": "backend" }
+  { "_id": "1", "nome": "Angular", "categoria": "front-end" },
+  { "_id": "2", "nome": "Java", "categoria": "back-end" }
 ]

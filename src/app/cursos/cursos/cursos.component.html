@@ -22,7 +22,9 @@
       <!-- Categoria Column -->
       <ng-container matColumnDef="categoria">
         <th mat-header-cell *matHeaderCellDef> Categoria </th>
-        <td mat-cell *matCellDef="let curso"> {{ curso.categoria }} </td>
+        <td mat-cell *matCellDef="let curso"> {{ curso.categoria }}
+          <mat-icon aria-hidden="false" aria-label="icon categoria" fontIcon="{{ curso.categoria | categoria }}"></mat-icon>
+        </td>
       </ng-container>
 
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
@@ -35,6 +37,7 @@
       <mat-spinner></mat-spinner>
     </div>
   </ng-template>
+  <!-- <button mat-button (click)="openDialog()">Open dialog</button> -->
 
 
 </mat-card>
