@@ -27,6 +27,30 @@
         </td>
       </ng-container>
 
+          <!-- Categoria Column -->
+          <ng-container matColumnDef="acoes">
+            <th mat-header-cell *matHeaderCellDef> Acoes </th>
+            <mat-header-cell *matHeaderCellDef="">
+              <button mat-mini-fab color="accent" aria-label="botao para acoes em cursos listados">
+                <mat-icon>menu</mat-icon>
+              </button>
+            </mat-header-cell>
+
+            <mat-cell *matCellDef="let cursos">
+              <button (click)="onAdd()" mat-icon-button color="accent" aria-label="adicionar curso listado">
+                <mat-icon>add</mat-icon>
+              </button>
+
+              <button  mat-icon-button color="primary" aria-label="editar curso listado">
+                <mat-icon>edit</mat-icon>
+              </button>
+
+              <button mat-icon-button color="warn" aria-label="remover cursos listados">
+                <mat-icon>delete</mat-icon>
+              </button>
+            </mat-cell>
+          </ng-container>
+
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
